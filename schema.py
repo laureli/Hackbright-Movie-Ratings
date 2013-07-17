@@ -8,7 +8,7 @@ User:
 id: integer
 age: integer
 gender: string
-zip_code: string (technically zip codes aren't numeric)
+zip_code: string (technically zip codes aren't numeric); 
 email: optional string
 password: optional string
 
@@ -20,8 +20,7 @@ imdb_url: string
 
 Rating:
 id: integer
-movie_id: integer
-user_id: integer
+ user_id: integer
 rating: integer
 
 A user has many ratings

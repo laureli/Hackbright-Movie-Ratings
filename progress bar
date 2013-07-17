@@ -1,0 +1,15 @@
+1. get date string from file
+2. use strptime to convert this into "datetime" usable format
+3. make datetime object into database
+4. insert this into database
+
+
+current date info:  01-Jan-1995
+
+import datetime from time
+date_object = datetime.strptime('01-Jan-1995', '%m %b %Y')
+
+THIS WORKS:
+
+date_object = datetime.strptime("01-Jan-1995", "%d-%b-%Y")
+

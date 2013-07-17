@@ -19,7 +19,7 @@ def load_movies(session):
         f = csv.reader(csvfile, delimiter= "|")
         for row in f:
             dateobject = row[2]
-            title = row[3]
+            title = row[1]
             title=title.decode("latin-1")
             dateobject = datetime.strptime("01-Jan-1995", "%d-%b-%Y")
             movie = Movies(name=title, released_at=dateobject, imdb_url=row[4])
@@ -36,9 +36,9 @@ def load_ratings(session):
 
 def main(session):
     # You'll call each of the load_* functions with the session as an argument
-    load_users(session)
+    # load_users(session)
     load_movies(session)
-    load_ratings(session)
+    # load_ratings(session)
     
 
 if __name__ == "__main__":
