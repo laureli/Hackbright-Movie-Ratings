@@ -12,3 +12,26 @@ if __name__=="__main__":
     app.run(debug=True)
 
 
+@app.route("/new_user")
+def create_user():
+    n_user = User(email= , password=       , age=      , zipcode=      )
+
+    return render_template("new_user.hmtl", )
+
+    session.add(n_user)
+    session.commit()
+
+
+
+
+# # @app.route("/login")
+# def user_login():
+
+# @app.route("/view_users")
+# def view_users():
+
+# @app.route("/ratings_user")
+# def view_ratings_user():
+
+# @add.route("/modify_rating")
+# def modify_rating():
