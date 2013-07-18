@@ -1,0 +1,14 @@
+
+<html>
+{% block body %}
+<h1>here you make a new user</h1>
+<form method="POST", action="/create_user">
+    <input type="text" name="email" placeholder="email!"/>
+    <input type="text" name="password" placeholder="password!"/>
+    <input type="text" name="age" placeholder="age!"/>
+    <input type="text" name="zipcode" placeholder="zipcode!"/>
+    <input type="submit" value="Login"/>
+</form>
+{% endblock %}
+
+</html>
