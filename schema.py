@@ -5,23 +5,23 @@
 join on user_id
 
 User:
-id: integer
-age: integer
-gender: string
-zip_code: string (technically zip codes aren't numeric); 
-email: optional string
-password: optional string
+    id: integer
+    age: integer
+    gender: string
+    zip_code: string (technically zip codes aren't numeric
+    email: optional string
+    password: optional string
 
 Movie:
-id: integer
-name: string
-released_at: datetime
-imdb_url: string
+    id: integer
+    name: string
+    released_at: datetime
+    imdb_url: string
 
 Rating:
-id: integer
- user_id: integer
-rating: integer
+    id: integer
+     user_id: integer
+    rating: integer
 
 A user has many ratings
 A rating belongs to a user

@@ -1,0 +1,17 @@
+<html>
+<h2>look at deez bitchzzzz by email, damn that's hot!</h2>
+{% block body %}
+
+     <h2>email search-face</h2>
+    {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+    <form action="{{ url_for('view_user') }}" method="POST">
+        <dl>
+            <dt>email:
+            <dd><input type="text" name="email">
+         
+            <dd><input type="submit" value="Login">
+            </dl>
+    </form>
+{% endblock %}
+
+</html>

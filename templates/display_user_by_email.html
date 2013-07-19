@@ -1,0 +1,10 @@
+<html>
+<h2>here's the person that you looked up by email</h2>
+{% block body %}
+
+     <h2>you are totally stalking:</h2>
+    <h2>User {{ user.email }}, age {{user.age}} has {{user.ratings|length}} ratings</h2>
+
+{% endblock %}
+
+</html>
