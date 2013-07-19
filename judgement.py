@@ -79,8 +79,6 @@ def login():
     return redirect("/punch_user")
 
 
-
-
 # @app.route("/ratings_user")
 # def view_ratings_user():
 
