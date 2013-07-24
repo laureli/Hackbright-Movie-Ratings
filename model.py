@@ -13,9 +13,7 @@ from sqlalchemy.orm import relationship, backref
 # def connect():
 #     global ENGINE 
 #     global Session
-
 #     return Session()
-
 
 
 engine = create_engine("sqlite:///ratings.db", echo=False)
@@ -24,16 +22,12 @@ session = scoped_session(sessionmaker(bind=engine,
                                 autoflush=False))
 
 
-    #in ipython, declare session = connect() in order to access this function 
-
-
 Base = declarative_base()
 Base.query = session.query_property()
 
 ### Class declarations go here
 
 class User(Base):
-
     __tablename__ = "Users"
     id = Column(Integer, primary_key = True)
     email = Column(String(64), nullable= True)
@@ -41,8 +35,8 @@ class User(Base):
     age = Column(Integer, nullable = True)
     zipcode = Column(String(15), nullable = True)
 
-class Movies(Base):
 
+class Movies(Base):
     __tablename__ = "Movies"
     id = Column(Integer, primary_key = True)
     name = Column(String(64)) 
